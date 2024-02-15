@@ -79,13 +79,15 @@
 
 
 
-<meta name="description" content="李克奉的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Crophone&#39;s blog">
-<meta property="og:url" content="https://crophone.github.io/Crophone/index.html">
+<meta name="description" content="codeforces  questionsA. Recovering a Small Stringbreak the multiple for loops using flagC has no bool type,so flag should be int  1234567891011121314151617181920212223242526272829#include &lt;stdio.h&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Codeforces Round 925">
+<meta property="og:url" content="https://crophone.github.io/Crophone/2024/02/14/20240214/index.html">
 <meta property="og:site_name" content="Crophone&#39;s blog">
-<meta property="og:description" content="李克奉的博客">
+<meta property="og:description" content="codeforces  questionsA. Recovering a Small Stringbreak the multiple for loops using flagC has no bool type,so flag should be int  1234567891011121314151617181920212223242526272829#include &lt;stdio.h&amp;">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-02-14T14:45:40.963Z">
+<meta property="article:modified_time" content="2024-02-15T06:30:00.518Z">
 <meta property="article:author" content="Crophone">
 <meta name="twitter:card" content="summary">
 
@@ -117,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://crophone.github.io/Crophone/"/>
+  <link rel="canonical" href="https://crophone.github.io/Crophone/2024/02/14/20240214/"/>
 
 
 
 
 
-  <title>Crophone's blog</title>
+  <title>Codeforces Round 925 | Crophone's blog</title>
   
 
 
@@ -142,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -248,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Crophone/2024/02/14/20240214/" itemprop="url">Codeforces Round 925</a></h1>
+          <h1 class="post-title" itemprop="name headline">Codeforces Round 925</h1>
         
 
         <div class="post-meta">
@@ -300,9 +299,7 @@
       
 
       
-        
-          
-            <h1 id="codeforces-questions"><a href="#codeforces-questions" class="headerlink" title="codeforces  questions"></a>codeforces  questions</h1><h3 id="A-Recovering-a-Small-String"><a href="#A-Recovering-a-Small-String" class="headerlink" title="A. Recovering a Small String"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1931/problem/A">A. Recovering a Small String</a></h3><p>break the multiple <code>for</code> loops using <code>flag</code><br>C has no bool type,so flag should be <code>int</code> </p>
+        <h1 id="codeforces-questions"><a href="#codeforces-questions" class="headerlink" title="codeforces  questions"></a>codeforces  questions</h1><h3 id="A-Recovering-a-Small-String"><a href="#A-Recovering-a-Small-String" class="headerlink" title="A. Recovering a Small String"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1931/problem/A">A. Recovering a Small String</a></h3><p>break the multiple <code>for</code> loops using <code>flag</code><br>C has no bool type,so flag should be <code>int</code> </p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">char</span>  s[<span class="number">27</span>]=<span class="string">&quot;abcdefghijklmnopqrstuvwxyz&quot;</span>;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	<span class="type">int</span> m;</span><br><span class="line">	<span class="type">int</span> flag=<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	<span class="keyword">while</span>(n--)&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;m);</span><br><span class="line">	<span class="type">int</span> x,y,z;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> x=<span class="number">1</span>;x&lt;=<span class="number">26</span>&amp;&amp;flag;x++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> y=<span class="number">1</span>;y&lt;=<span class="number">26</span>&amp;&amp;flag;y++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> z=<span class="number">1</span>;z&lt;=<span class="number">26</span>&amp;&amp;flag;z++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(x+y+z==m)&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%c%c%c\n&quot;</span>,s[x<span class="number">-1</span>],s[y<span class="number">-1</span>],s[z<span class="number">-1</span>]);</span><br><span class="line">				flag=<span class="number">0</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;		</span><br><span class="line">		&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		&#125; 	</span><br><span class="line">	flag=<span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h3 id="B-Make-Equal"><a href="#B-Make-Equal" class="headerlink" title="B. Make Equal"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1931/problem/B">B. Make Equal</a></h3><p>greedy<br>from back to front,the <code>tempSum</code>should  be smaller than <code>average*num</code>;</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">int</span> value[<span class="number">200005</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	<span class="type">int</span> m;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span>(n--)&#123;</span><br><span class="line">	<span class="type">int</span> flag=<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;m);</span><br><span class="line">	<span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;m;i++)&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;value[i]);</span><br><span class="line">		sum+=value[i];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> average=sum/m;</span><br><span class="line">	<span class="type">int</span> tempSum=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=m<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">		tempSum+=value[i];</span><br><span class="line">		<span class="keyword">if</span>(tempSum&gt;average*(m-i))&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;NO\n&quot;</span>);</span><br><span class="line">			flag=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(flag)&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;YES\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	&#125; 	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -316,8 +313,6 @@
 
 
 
-          
-        
       
     </div>
     
@@ -334,169 +329,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://crophone.github.io/Crophone/Crophone/2024/02/12/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/Crophone/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Crophone's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Crophone/2024/02/12/hello-world/" itemprop="url">2024第一篇文档</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2024-02-12T23:37:15+08:00">
-                2024-02-12
-              </time>
+              <a href="/Crophone/2024/02/12/hello-world/" rel="next" title="2024第一篇文档">
+                <i class="fa fa-chevron-left"></i> 2024第一篇文档
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>这篇教程会教你如何用github部署hexo生成的静态网站，搭建属于自己的博客<br>效果如本网站所示<br><a href="https://crophone.github.io/Crophone/">https://crophone.github.io/Crophone/</a></p>
-<p>首选推荐参考官方文档</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo</a></li>
-<li><a target="_blank" rel="noopener" href="https://theme-next.js.org/">切换next主题</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/EYHN/hexo-helper-live2d">hexo添加看板娘</a></li>
-<li><a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment">hexo博客部署至git</a></li>
-<li><a target="_blank" rel="noopener" href="https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-github-pages-site">github pages站点</a></li>
-</ul>
-<h3 id="创建blog目录"><a href="#创建blog目录" class="headerlink" title="创建blog目录"></a>创建blog目录</h3><ol>
-<li>参考官方文档，创建blog目录<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="切换next主题"><a href="#切换next主题" class="headerlink" title="切换next主题"></a>切换next主题</h3><ol>
-<li>安装next主题<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-theme-next</span><br></pre></td></tr></table></figure></li>
-<li>修改blog目录下的_config.yml文件<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="添加看板娘"><a href="#添加看板娘" class="headerlink" title="添加看板娘"></a>添加看板娘</h3><ol>
-<li>安装依赖<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-haru</span><br></pre></td></tr></table></figure></li>
-<li>在blog目录下创建live2d_models目录</li>
-<li>将node_modules目录下的live2d-widget-model-haru复制到live2d_models中</li>
-<li>修改blog目录下的_config.yml文件<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">live2d:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">scriptFrom:</span> <span class="string">local</span></span><br><span class="line">  <span class="attr">pluginRootPath:</span> <span class="string">live2dw/</span></span><br><span class="line">  <span class="attr">pluginJsPath:</span> <span class="string">lib/</span></span><br><span class="line">  <span class="attr">pluginModelPath:</span> <span class="string">assets/</span></span><br><span class="line">  <span class="attr">tagMode:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">debug:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">model:</span></span><br><span class="line">    <span class="attr">use:</span> <span class="string">live2d-widget-model-haru/01</span></span><br><span class="line">  <span class="attr">display:</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">right</span></span><br><span class="line">    <span class="attr">width:</span> <span class="number">300</span></span><br><span class="line">    <span class="attr">height:</span> <span class="number">600</span></span><br><span class="line">  <span class="attr">mobile:</span></span><br><span class="line">    <span class="attr">show:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">react:</span></span><br><span class="line">    <span class="attr">opacity:</span> <span class="number">0.7</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="将博客部署到git仓库"><a href="#将博客部署到git仓库" class="headerlink" title="将博客部署到git仓库"></a>将博客部署到git仓库</h3><ol>
-<li><p>github创建名为Crophone的仓库</p>
-</li>
-<li><p>安装部署工具</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改_config.yml文件</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/Crophone/Crophone</span></span><br><span class="line">  <span class="attr">branch:</span> [<span class="string">master</span>]</span><br></pre></td></tr></table></figure>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://crophone.github.io/Crophone</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/Crophone</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>部署到git服务器仓库</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在github的代码仓库中setting，设置pages，设github站点</p>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -506,10 +360,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -517,6 +372,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -537,8 +396,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -580,6 +448,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#codeforces-questions"><span class="nav-number">1.</span> <span class="nav-text">codeforces  questions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-Recovering-a-Small-String"><span class="nav-number">1.0.1.</span> <span class="nav-text">A. Recovering a Small String</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B-Make-Equal"><span class="nav-number">1.0.2.</span> <span class="nav-text">B. Make Equal</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-Make-Equal-Again"><span class="nav-number">1.0.3.</span> <span class="nav-text">C. Make Equal Again</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#D-Divisible-Pairs"><span class="nav-number">1.0.4.</span> <span class="nav-text">D. Divisible Pairs</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -713,6 +597,10 @@
   
 
   
+  <script type="text/javascript" src="/Crophone/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/Crophone/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
