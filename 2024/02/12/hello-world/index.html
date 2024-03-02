@@ -687,13 +687,17 @@
           clientSecret: '4aef958a8d96e4a49852694ad49939a0fb1ee5a5',
           repo: 'BlogComments',
           owner: 'Crophone',
-          admin: ['Crophone'],
-          id: md5(), 
+          admin: [''],
+          id: md5(location.pathname), 
           labels: ['Gitalk'],
           perPage: 15,
           pagerDirection: 'last',
-          distractionFreeMode: true
+          distractionFreeMode: true,
+          proxy: 'https://proxy.cors.sh/https://github.com/login/oauth/access_token'
         })
+
+
+
         gitalk.render('gitalk-container')           
     </script>
 
